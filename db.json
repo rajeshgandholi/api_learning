@@ -1,0 +1,95 @@
+{
+  "alerts": [
+    {
+      "id": 1,
+      "type": "SOS",
+      "sender_id": "usr_9921",
+      "location": {
+        "latitude": 33.6189,
+        "longitude": -117.9298,
+        "description": "Main Lobby, Floor 1"
+      },
+      "status": "active",
+      "timestamp": "2026-06-15T11:45:00Z",
+      "description": "Unauthorized individual trying to bypass security checkpoint."
+    },
+    {
+      "id": 2,
+      "type": "Weather",
+      "sender_id": "sys_auto_04",
+      "location": {
+        "latitude": 34.0522,
+        "longitude": -118.2437,
+        "description": "Los Angeles Regional Campus"
+      },
+      "status": "resolved",
+      "timestamp": "2026-06-14T09:15:00Z",
+      "description": "Severe thunderstorm and high wind warning."
+    }
+  ],
+  "broadcasts": [
+    {
+      "id": 101,
+      "title": "Evacuation Drill Notification",
+      "message": "This is a test broadcast for the scheduled Q2 evacuation drill. Please head to your nearest exit.",
+      "channels": ["app", "sms", "email", "voice"],
+      "target_roles": ["All-Staff", "On-Site-Contractors"],
+      "sent_at": "2026-06-15T10:00:00Z"
+    }
+  ],
+  "safety_checkins": [
+    {
+      "id": 501,
+      "alert_id": 1,
+      "title": "Active Incident Status Request",
+      "responses": [
+        {
+          "user_id": "usr_102",
+          "status": "Safe",
+          "current_lat": 33.6190,
+          "current_lng": -117.9295,
+          "updated_at": "2026-06-15T11:46:12Z"
+        },
+        {
+          "user_id": "usr_405",
+          "status": "Unsafe - Need Assistance",
+          "current_lat": 33.6185,
+          "current_lng": -117.9301,
+          "updated_at": "2026-06-15T11:47:05Z"
+        }
+      ]
+    }
+  ],
+  "site_files": [
+    {
+      "id": "file_01",
+      "name": "Emergency_Evacuation_Map_2026.pdf",
+      "category": "Maps",
+      "access_roles": ["Admin", "Security", "Staff"],
+      "url": "https://example-bucket.s3.amazonaws.com/maps/floorplan_1.pdf"
+    },
+    {
+      "id": "file_02",
+      "name": "Active_Shooter_Protocol.mp4",
+      "category": "Safety Videos",
+      "access_roles": ["Admin", "Security"],
+      "url": "https://example-bucket.s3.amazonaws.com/videos/protocol.mp4"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr_102",
+      "name": "Jane Doe",
+      "role": "Staff",
+      "mesh_node_id": "mesh_node_la_99",
+      "language": "en"
+    },
+    {
+      "id": "usr_405",
+      "name": "John Smith",
+      "role": "Security",
+      "mesh_node_id": "mesh_node_la_02",
+      "language": "es"
+    }
+  ]
+}
