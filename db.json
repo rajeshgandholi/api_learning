@@ -78,18 +78,78 @@
   ],
   "users": [
     {
-      "id": "usr_102",
-      "name": "Jane Doe",
-      "role": "Staff",
-      "mesh_node_id": "mesh_node_la_99",
-      "language": "en"
+      "id": "usr_99214A",
+      "firstName": "John",
+      "lastName": "Doe",
+      "preferredLanguage": "en",
+      "roles": [
+        {
+          "id": "role_site_admin",
+          "name": "Site Administrator"
+        },
+        {
+          "id": "role_safety_officer",
+          "name": "Safety Officer"
+        }
+      ],
+      "emails": [
+        {
+          "emailAddress": "johndoe@titanhst-demo.com"
+        }
+      ],
+      "externalIds": [
+        "EXT-100239"
+      ],
+      "phoneNumbers": [
+        {
+          "number": "5550199",
+          "countryCode": "+1",
+          "useForSms": true,
+          "useForVoice": true
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "name": "Jane Doe",
+          "phoneNumber": "+15550198",
+          "relationship": "Spouse"
+        }
+      ]
     },
     {
-      "id": "usr_405",
-      "name": "John Smith",
-      "role": "Security",
-      "mesh_node_id": "mesh_node_la_02",
-      "language": "es"
+      "id": "usr_88301B",
+      "firstName": "Maria",
+      "lastName": "Rodriguez",
+      "preferredLanguage": "es",
+      "roles": [
+        {
+          "id": "role_general_staff",
+          "name": "General Staff"
+        }
+      ],
+      "emails": [
+        {
+          "emailAddress": "mrodriguez@titanhst-demo.com"
+        }
+      ],
+      "externalIds": [
+        "EXT-100240"
+      ],
+      "phoneNumbers": [
+        {
+          "number": "5550144",
+          "countryCode": "+1",
+          "useForSms": true,
+          "useForVoice": false
+        }
+      ],
+      "emergencyContacts": [
+        {
+          "name": "Carlos Rodriguez",
+          "phoneNumber": "+15550145",
+          "relationship": "Brother"
+        }
+      ]
     }
   ]
 }
